@@ -14,6 +14,8 @@
 		205C5BB31B95CEDD00A69D08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205C5BB11B95CEDD00A69D08 /* LaunchScreen.storyboard */; };
 		205C5BBE1B95CEDD00A69D08 /* MasonryDemo2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C5BBD1B95CEDD00A69D08 /* MasonryDemo2Tests.swift */; };
 		205C5BC91B95CEDD00A69D08 /* MasonryDemo2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C5BC81B95CEDD00A69D08 /* MasonryDemo2UITests.swift */; };
+		209E85D21B95FDCE008466C9 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209E85CB1B95FDBC008466C9 /* SnapKit.framework */; };
+		209E85D31B95FDCE008466C9 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 209E85CB1B95FDBC008466C9 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +33,56 @@
 			remoteGlobalIDString = 205C5BA41B95CEDD00A69D08;
 			remoteInfo = MasonryDemo2;
 		};
+		209E85CA1B95FDBC008466C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 209E85C31B95FDBC008466C9 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = "SnapKit iOS";
+		};
+		209E85CC1B95FDBC008466C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 209E85C31B95FDBC008466C9 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EECDB37A1AC0C9D4006BBC11;
+			remoteInfo = "SnapKit OSX";
+		};
+		209E85CE1B95FDBC008466C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 209E85C31B95FDBC008466C9 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = "SnapKit iOS Tests";
+		};
+		209E85D01B95FDBC008466C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 209E85C31B95FDBC008466C9 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EECDB3841AC0C9D4006BBC11;
+			remoteInfo = "SnapKit OSX Tests";
+		};
+		209E85D41B95FDCE008466C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 209E85C31B95FDBC008466C9 /* SnapKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
+			remoteInfo = "SnapKit iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		209E85C21B95FB57008466C9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				209E85D31B95FDCE008466C9 /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		205C5BA51B95CEDD00A69D08 /* MasonryDemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasonryDemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +98,7 @@
 		205C5BC41B95CEDD00A69D08 /* MasonryDemo2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MasonryDemo2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		205C5BC81B95CEDD00A69D08 /* MasonryDemo2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasonryDemo2UITests.swift; sourceTree = "<group>"; };
 		205C5BCA1B95CEDD00A69D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		209E85C31B95FDBC008466C9 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "../../../../../Downloads/SnapKit-swift-2.0/SnapKit.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				209E85D21B95FDCE008466C9 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +130,8 @@
 		205C5B9C1B95CEDD00A69D08 = {
 			isa = PBXGroup;
 			children = (
+				209E85C31B95FDBC008466C9 /* SnapKit.xcodeproj */,
+				209E859A1B95F212008466C9 /* FrameWorks */,
 				205C5BA71B95CEDD00A69D08 /* MasonryDemo2 */,
 				205C5BBC1B95CEDD00A69D08 /* MasonryDemo2Tests */,
 				205C5BC71B95CEDD00A69D08 /* MasonryDemo2UITests */,
@@ -125,6 +180,24 @@
 			path = MasonryDemo2UITests;
 			sourceTree = "<group>";
 		};
+		209E859A1B95F212008466C9 /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FrameWorks;
+			sourceTree = "<group>";
+		};
+		209E85C41B95FDBC008466C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				209E85CB1B95FDBC008466C9 /* SnapKit.framework */,
+				209E85CD1B95FDBC008466C9 /* SnapKit.framework */,
+				209E85CF1B95FDBC008466C9 /* SnapKit iOS Tests.xctest */,
+				209E85D11B95FDBC008466C9 /* SnapKit OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +208,12 @@
 				205C5BA11B95CEDD00A69D08 /* Sources */,
 				205C5BA21B95CEDD00A69D08 /* Frameworks */,
 				205C5BA31B95CEDD00A69D08 /* Resources */,
+				209E85C21B95FB57008466C9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				209E85D51B95FDCE008466C9 /* PBXTargetDependency */,
 			);
 			name = MasonryDemo2;
 			productName = MasonryDemo2;
@@ -214,6 +289,12 @@
 			mainGroup = 205C5B9C1B95CEDD00A69D08;
 			productRefGroup = 205C5BA61B95CEDD00A69D08 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 209E85C41B95FDBC008466C9 /* Products */;
+					ProjectRef = 209E85C31B95FDBC008466C9 /* SnapKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				205C5BA41B95CEDD00A69D08 /* MasonryDemo2 */,
@@ -222,6 +303,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		209E85CB1B95FDBC008466C9 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = 209E85CA1B95FDBC008466C9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		209E85CD1B95FDBC008466C9 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = 209E85CC1B95FDBC008466C9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		209E85CF1B95FDBC008466C9 /* SnapKit iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit iOS Tests.xctest";
+			remoteRef = 209E85CE1B95FDBC008466C9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		209E85D11B95FDBC008466C9 /* SnapKit OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit OSX Tests.xctest";
+			remoteRef = 209E85D01B95FDBC008466C9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		205C5BA31B95CEDD00A69D08 /* Resources */ = {
@@ -289,6 +401,11 @@
 			target = 205C5BA41B95CEDD00A69D08 /* MasonryDemo2 */;
 			targetProxy = 205C5BC51B95CEDD00A69D08 /* PBXContainerItemProxy */;
 		};
+		209E85D51B95FDCE008466C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SnapKit iOS";
+			targetProxy = 209E85D41B95FDCE008466C9 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -347,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -385,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -396,8 +513,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MasonryDemo2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = dz.org.MasonryDemo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -407,8 +527,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MasonryDemo2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = dz.org.MasonryDemo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -481,6 +604,7 @@
 				205C5BCF1B95CEDD00A69D08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		205C5BD01B95CEDD00A69D08 /* Build configuration list for PBXNativeTarget "MasonryDemo2Tests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +613,7 @@
 				205C5BD21B95CEDD00A69D08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		205C5BD31B95CEDD00A69D08 /* Build configuration list for PBXNativeTarget "MasonryDemo2UITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +622,7 @@
 				205C5BD51B95CEDD00A69D08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
