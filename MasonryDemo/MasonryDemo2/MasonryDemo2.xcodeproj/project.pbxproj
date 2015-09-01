@@ -16,6 +16,7 @@
 		205C5BC91B95CEDD00A69D08 /* MasonryDemo2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C5BC81B95CEDD00A69D08 /* MasonryDemo2UITests.swift */; };
 		209E85D21B95FDCE008466C9 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209E85CB1B95FDBC008466C9 /* SnapKit.framework */; };
 		209E85D31B95FDCE008466C9 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 209E85CB1B95FDBC008466C9 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		209E85D71B966091008466C9 /* CaseOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E85D61B966091008466C9 /* CaseOne.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		205C5BC81B95CEDD00A69D08 /* MasonryDemo2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasonryDemo2UITests.swift; sourceTree = "<group>"; };
 		205C5BCA1B95CEDD00A69D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		209E85C31B95FDBC008466C9 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "../../../../../Downloads/SnapKit-swift-2.0/SnapKit.xcodeproj"; sourceTree = "<group>"; };
+		209E85D61B966091008466C9 /* CaseOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseOne.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				205C5BAF1B95CEDD00A69D08 /* Assets.xcassets */,
 				205C5BB11B95CEDD00A69D08 /* LaunchScreen.storyboard */,
 				205C5BB41B95CEDD00A69D08 /* Info.plist */,
+				209E85D61B966091008466C9 /* CaseOne.swift */,
 			);
 			path = MasonryDemo2;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				209E85D71B966091008466C9 /* CaseOne.swift in Sources */,
 				205C5BAB1B95CEDD00A69D08 /* ViewController.swift in Sources */,
 				205C5BA91B95CEDD00A69D08 /* AppDelegate.swift in Sources */,
 			);
