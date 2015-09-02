@@ -100,6 +100,22 @@ class ViewController: UIViewController {
             make.height.equalTo(40)
         }
 
+        
+        let btn2 = UIButton()
+        btn2.setTitle("案例 3", forState: UIControlState.Normal)
+        btn2.backgroundColor = UIColor.purpleColor()
+        btn2.addTarget(self, action: "fun3", forControlEvents: UIControlEvents.TouchUpInside)
+        //view.insertSubview(btn, aboveSubview: greyView)
+        self.view.insertSubview(btn2, atIndex: 10)
+        btn2.alpha = 0.7
+        
+        btn2.snp_makeConstraints { (make:ConstraintMaker) -> Void in
+            make.left.equalTo(view1.snp_left).offset(0)
+            make.top.equalTo(btn1.snp_bottom).offset(5)
+            make.width.equalTo(view1.snp_width)
+            make.height.equalTo(40)
+        }
+
     }
     
     func fun1(){
@@ -112,6 +128,13 @@ class ViewController: UIViewController {
         let c2 =  CaseTwo()
         self.presentViewController(c2, animated: true) { () -> Void in
             print("into case 2")
+        }
+    }
+    
+    func fun3(){
+        let c3 =  CaseThree()
+        self.presentViewController(c3, animated: true) { () -> Void in
+            print("into case 3")
         }
     }
 

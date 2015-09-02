@@ -18,6 +18,7 @@
 		209E85D31B95FDCE008466C9 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 209E85CB1B95FDBC008466C9 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		209E85D71B966091008466C9 /* CaseOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E85D61B966091008466C9 /* CaseOne.swift */; };
 		209E85D91B966AEA008466C9 /* CaseTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E85D81B966AEA008466C9 /* CaseTwo.swift */; };
+		209E85DB1B967178008466C9 /* CaseThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E85DA1B967178008466C9 /* CaseThree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		209E85C31B95FDBC008466C9 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "../../../../../Downloads/SnapKit-swift-2.0/SnapKit.xcodeproj"; sourceTree = "<group>"; };
 		209E85D61B966091008466C9 /* CaseOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseOne.swift; sourceTree = "<group>"; };
 		209E85D81B966AEA008466C9 /* CaseTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseTwo.swift; sourceTree = "<group>"; };
+		209E85DA1B967178008466C9 /* CaseThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseThree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				205C5BB41B95CEDD00A69D08 /* Info.plist */,
 				209E85D61B966091008466C9 /* CaseOne.swift */,
 				209E85D81B966AEA008466C9 /* CaseTwo.swift */,
+				209E85DA1B967178008466C9 /* CaseThree.swift */,
 			);
 			path = MasonryDemo2;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				209E85D71B966091008466C9 /* CaseOne.swift in Sources */,
+				209E85DB1B967178008466C9 /* CaseThree.swift in Sources */,
 				205C5BAB1B95CEDD00A69D08 /* ViewController.swift in Sources */,
 				209E85D91B966AEA008466C9 /* CaseTwo.swift in Sources */,
 				205C5BA91B95CEDD00A69D08 /* AppDelegate.swift in Sources */,
