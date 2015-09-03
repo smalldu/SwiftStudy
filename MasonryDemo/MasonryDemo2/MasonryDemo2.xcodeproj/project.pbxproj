@@ -19,6 +19,7 @@
 		209E85D71B966091008466C9 /* CaseOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E85D61B966091008466C9 /* CaseOne.swift */; };
 		209E85D91B966AEA008466C9 /* CaseTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E85D81B966AEA008466C9 /* CaseTwo.swift */; };
 		209E85DB1B967178008466C9 /* CaseThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E85DA1B967178008466C9 /* CaseThree.swift */; };
+		209E85DD1B972562008466C9 /* CaseFourController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E85DC1B972562008466C9 /* CaseFourController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		209E85D61B966091008466C9 /* CaseOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseOne.swift; sourceTree = "<group>"; };
 		209E85D81B966AEA008466C9 /* CaseTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseTwo.swift; sourceTree = "<group>"; };
 		209E85DA1B967178008466C9 /* CaseThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseThree.swift; sourceTree = "<group>"; };
+		209E85DC1B972562008466C9 /* CaseFourController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseFourController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				209E85D61B966091008466C9 /* CaseOne.swift */,
 				209E85D81B966AEA008466C9 /* CaseTwo.swift */,
 				209E85DA1B967178008466C9 /* CaseThree.swift */,
+				209E85DC1B972562008466C9 /* CaseFourController.swift */,
 			);
 			path = MasonryDemo2;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				205C5BAB1B95CEDD00A69D08 /* ViewController.swift in Sources */,
 				209E85D91B966AEA008466C9 /* CaseTwo.swift in Sources */,
 				205C5BA91B95CEDD00A69D08 /* AppDelegate.swift in Sources */,
+				209E85DD1B972562008466C9 /* CaseFourController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

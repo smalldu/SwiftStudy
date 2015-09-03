@@ -115,6 +115,22 @@ class ViewController: UIViewController {
             make.width.equalTo(view1.snp_width)
             make.height.equalTo(40)
         }
+        
+        let btn3 = UIButton()
+        btn3.setTitle("案例 4", forState: UIControlState.Normal)
+        btn3.backgroundColor = UIColor.purpleColor()
+        btn3.addTarget(self, action: "fun4", forControlEvents: UIControlEvents.TouchUpInside)
+        //view.insertSubview(btn, aboveSubview: greyView)
+        self.view.insertSubview(btn3, atIndex: 10)
+        btn3.alpha = 0.7
+        
+        btn3.snp_makeConstraints { (make:ConstraintMaker) -> Void in
+            make.left.equalTo(view1.snp_left).offset(0)
+            make.top.equalTo(btn2.snp_bottom).offset(5)
+            make.width.equalTo(view1.snp_width)
+            make.height.equalTo(40)
+        }
+
 
     }
     
@@ -138,6 +154,14 @@ class ViewController: UIViewController {
         }
     }
 
+    func fun4(){
+        let c4 =  CaseFourController()
+        self.presentViewController(c4, animated: true) { () -> Void in
+            print("into case 4")
+        }
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
