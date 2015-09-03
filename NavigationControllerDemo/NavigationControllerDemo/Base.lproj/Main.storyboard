@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -91,17 +92,17 @@
                                 <exclude reference="Rlg-g7-Z6A"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Q26-FW-bNV"/>
-                                <exclude reference="weY-Lm-gBa"/>
                                 <exclude reference="NC1-6i-Jqn"/>
                                 <exclude reference="fSC-x8-SST"/>
+                                <exclude reference="Q26-FW-bNV"/>
+                                <exclude reference="weY-Lm-gBa"/>
+                                <exclude reference="zrY-Hv-iKt"/>
+                                <exclude reference="zyC-Gx-f5A"/>
+                                <exclude reference="NSe-ek-oZ4"/>
+                                <exclude reference="xS3-Qm-umD"/>
                                 <exclude reference="6K1-pZ-5sZ"/>
                                 <exclude reference="9K0-3W-dwX"/>
                                 <exclude reference="OFt-i1-MC4"/>
-                                <exclude reference="NSe-ek-oZ4"/>
-                                <exclude reference="xS3-Qm-umD"/>
-                                <exclude reference="zrY-Hv-iKt"/>
-                                <exclude reference="zyC-Gx-f5A"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -113,17 +114,17 @@
                                 <include reference="Rlg-g7-Z6A"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Q26-FW-bNV"/>
-                                <include reference="weY-Lm-gBa"/>
                                 <include reference="NC1-6i-Jqn"/>
                                 <include reference="fSC-x8-SST"/>
+                                <include reference="Q26-FW-bNV"/>
+                                <include reference="weY-Lm-gBa"/>
+                                <include reference="zrY-Hv-iKt"/>
+                                <include reference="zyC-Gx-f5A"/>
+                                <include reference="NSe-ek-oZ4"/>
+                                <include reference="xS3-Qm-umD"/>
                                 <include reference="6K1-pZ-5sZ"/>
                                 <include reference="9K0-3W-dwX"/>
                                 <include reference="OFt-i1-MC4"/>
-                                <include reference="NSe-ek-oZ4"/>
-                                <include reference="xS3-Qm-umD"/>
-                                <include reference="zrY-Hv-iKt"/>
-                                <include reference="zyC-Gx-f5A"/>
                             </mask>
                         </variation>
                     </view>
@@ -156,6 +157,7 @@
                         <viewControllerLayoutGuide type="bottom" id="D1c-bz-9Oy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="F1u-y1-f7i">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFh-em-NoJ">

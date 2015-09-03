@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="这里是push进来的" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hY-XR-faj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="这里是push进来的" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hY-XR-faj">
                                 <rect key="frame" x="170" y="77" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="236-IC-EDD"/>
@@ -37,7 +37,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2C1-vC-5De">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2C1-vC-5De">
                                 <rect key="frame" x="277" y="211" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="152" id="25H-ll-Lhi"/>
@@ -69,18 +69,18 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="H2J-8h-71M"/>
-                                <exclude reference="wGX-Sf-j0K"/>
                                 <exclude reference="1X3-lG-HjM"/>
                                 <exclude reference="RZ3-pD-DUb"/>
+                                <exclude reference="H2J-8h-71M"/>
+                                <exclude reference="wGX-Sf-j0K"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
-                                <include reference="H2J-8h-71M"/>
-                                <include reference="wGX-Sf-j0K"/>
                                 <include reference="1X3-lG-HjM"/>
                                 <include reference="RZ3-pD-DUb"/>
+                                <include reference="H2J-8h-71M"/>
+                                <include reference="wGX-Sf-j0K"/>
                             </mask>
                         </variation>
                     </view>
