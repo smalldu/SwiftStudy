@@ -25,7 +25,6 @@ class ViewControllerThree: UIViewController {
         self.presentViewController(mainVc, animated: true) { () -> Void in
             
         }
-        
     }
     
 

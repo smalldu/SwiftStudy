@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
-        // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .Plain, target: self, action: "goNext:")
         self.title = "导航标题"  //设置导航栏title（不是  self.navigationController?.title 哦！）
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "我把返回修改了", style: .Plain, target: nil, action: nil)

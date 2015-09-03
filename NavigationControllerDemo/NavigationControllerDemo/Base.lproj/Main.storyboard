@@ -53,7 +53,7 @@
                                 <state key="normal" title="传值方法2"/>
                                 <connections>
                                     <action selector="method2:" destination="JYg-f9-BvM" eventType="touchUpInside" id="OHm-He-WbW"/>
-                                    <segue destination="d6M-hO-PMp" kind="show" identifier="toshow" id="Drp-Ns-cGp"/>
+                                    <segue destination="d6M-hO-PMp" kind="show" identifier="toshow" id="72r-gJ-joP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4o8-Yd-zLC">
@@ -146,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bsA-3Y-gTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4422" y="-797.25"/>
+            <point key="canvasLocation" x="-4815" y="-636.75"/>
         </scene>
         <!--View Controller Two Show-->
         <scene sceneID="XW3-R0-ZYQ">
@@ -176,7 +176,8 @@
                                         <exclude reference="e0z-22-RZI"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="64" width="400" height="40"/>
                                     <mask key="constraints">
                                         <include reference="C3g-AU-KE8"/>
                                         <include reference="e0z-22-RZI"/>
@@ -231,7 +232,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfY-QD-We5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3697" y="-803"/>
+            <point key="canvasLocation" x="-4132.5" y="-668.25"/>
         </scene>
     </scenes>
 </document>

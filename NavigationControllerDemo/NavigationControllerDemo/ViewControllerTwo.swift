@@ -47,11 +47,6 @@ class ViewControllerTwo: UIViewController,ParameterDelegate {
     }
     //通过segue进行的传值
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if segue.identifier == "m2" {
-//            let vc = segue.destinationViewController as! ViewControllerFour
-//            vc.tmpStr = tf1.text
-//        }
-        
         if segue.identifier == "toshow" {
             let vc = segue.destinationViewController as! ViewControllerTwoShow
             vc.tmpStr = tf1.text
@@ -60,12 +55,12 @@ class ViewControllerTwo: UIViewController,ParameterDelegate {
     }
     //使用通知 。。不推荐
     @IBAction func method3(sender: UIButton) {
-        //发布一条通知
-        
+
         let vc = ViewControllerFour()
         vc.delegate = self  //通过代理进行反向传值
         
         self.presentViewController(vc, animated: true) { () -> Void in
+             //发布一条通知
             NSNotificationCenter.defaultCenter().postNotificationName("DefaultNotif", object:self.tf1.text)
         }
         //self.navigationController?.pushViewController(vc, animated: true)
