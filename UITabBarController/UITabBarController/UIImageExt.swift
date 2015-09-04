@@ -10,6 +10,7 @@ import UIKit
 
 extension UIImage{
 
+    //图像比例缩放
     func scaleImage(img:UIImage,scaleSize:CGFloat)->UIImage{
         UIGraphicsBeginImageContext(CGSizeMake(img.size.width * scaleSize, img.size.height * scaleSize))
         img.drawInRect(CGRectMake(0, 0, img.size.width * scaleSize, img.size.height * scaleSize))
@@ -18,5 +19,15 @@ extension UIImage{
         return scaledImage
     }
     
-
+    
+    //自定长宽
+    func reSizeImage(image:UIImage , toSize:CGSize)->UIImage{
+        UIGraphicsBeginImageContext(CGSizeMake(toSize.width, toSize.height));
+        image.drawInRect(CGRectMake(0, 0, toSize.width, toSize.height))
+        let reSizeImage = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        return reSizeImage;
+    }
+    
+    
 }
