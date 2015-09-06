@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="NetDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dpf-sg-D3P">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="85 °C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3D-TS-UbO">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="71"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjE-86-rqk">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="切换城市">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36470588235294116" green="0.76470588235294112" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dpf-sg-D3P" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="30" id="Eaw-hs-pac">
+                                <variation key="widthClass=compact" constant="60"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="t3D-TS-UbO" secondAttribute="centerX" id="SJk-iM-lmb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dpf-sg-D3P" secondAttribute="trailing" id="UlB-A1-YSj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XjE-86-rqk" secondAttribute="trailing" constant="5" id="cVE-wG-zfe"/>
+                            <constraint firstAttribute="centerX" secondItem="Dpf-sg-D3P" secondAttribute="centerX" id="dJE-yK-KWC"/>
+                            <constraint firstItem="t3D-TS-UbO" firstAttribute="top" secondItem="Dpf-sg-D3P" secondAttribute="bottom" constant="38" id="kc7-hm-goU"/>
+                            <constraint firstItem="XjE-86-rqk" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="n0C-2x-eCd"/>
+                            <constraint firstItem="Dpf-sg-D3P" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="s9E-g8-WRi"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Dpf-sg-D3P"/>
+                                <exclude reference="t3D-TS-UbO"/>
+                                <exclude reference="XjE-86-rqk"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Eaw-hs-pac"/>
+                                <exclude reference="UlB-A1-YSj"/>
+                                <exclude reference="dJE-yK-KWC"/>
+                                <exclude reference="s9E-g8-WRi"/>
+                                <exclude reference="SJk-iM-lmb"/>
+                                <exclude reference="kc7-hm-goU"/>
+                                <exclude reference="cVE-wG-zfe"/>
+                                <exclude reference="n0C-2x-eCd"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Dpf-sg-D3P"/>
+                                <include reference="t3D-TS-UbO"/>
+                                <include reference="XjE-86-rqk"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Eaw-hs-pac"/>
+                                <include reference="UlB-A1-YSj"/>
+                                <include reference="dJE-yK-KWC"/>
+                                <include reference="s9E-g8-WRi"/>
+                                <include reference="SJk-iM-lmb"/>
+                                <include reference="kc7-hm-goU"/>
+                                <include reference="cVE-wG-zfe"/>
+                                <include reference="n0C-2x-eCd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="cityName" destination="Dpf-sg-D3P" id="EXf-8F-k8l"/>
+                        <outlet property="degree" destination="t3D-TS-UbO" id="Ez2-nL-DBr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262.5" y="171"/>
+        </scene>
+    </scenes>
+</document>

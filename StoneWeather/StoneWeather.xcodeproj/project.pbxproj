@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		204F15231B9AB54100BBDFEA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204F15221B9AB54100BBDFEA /* MainViewController.swift */; };
+		204F15251B9ABB8D00BBDFEA /* LocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204F15241B9ABB8D00BBDFEA /* LocationInfo.swift */; };
+		204F15281B9AC8F000BBDFEA /* PrivinceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204F15271B9AC8F000BBDFEA /* PrivinceViewController.swift */; };
+		204F152A1B9AD1A700BBDFEA /* CitysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204F15291B9AD1A700BBDFEA /* CitysViewController.swift */; };
+		204F152E1B9AFF6800BBDFEA /* citys.json in Resources */ = {isa = PBXBuildFile; fileRef = 204F152D1B9AFF6800BBDFEA /* citys.json */; };
+		204F15301B9B01C600BBDFEA /* QuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204F152F1B9B01C600BBDFEA /* QuViewController.swift */; };
+		205DCC581B9AAD5400D1ED54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205DCC571B9AAD5400D1ED54 /* AppDelegate.swift */; };
+		205DCC5D1B9AAD5400D1ED54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205DCC5B1B9AAD5400D1ED54 /* Main.storyboard */; };
+		205DCC5F1B9AAD5400D1ED54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 205DCC5E1B9AAD5400D1ED54 /* Assets.xcassets */; };
+		205DCC621B9AAD5400D1ED54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205DCC601B9AAD5400D1ED54 /* LaunchScreen.storyboard */; };
+		205DCC6D1B9AAD5400D1ED54 /* StoneWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205DCC6C1B9AAD5400D1ED54 /* StoneWeatherTests.swift */; };
+		205DCC781B9AAD5400D1ED54 /* StoneWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205DCC771B9AAD5400D1ED54 /* StoneWeatherUITests.swift */; };
+		205DCC901B9AAE5A00D1ED54 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205DCC8F1B9AAE5A00D1ED54 /* CoreLocation.framework */; };
+		205DCC931B9AAE8A00D1ED54 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205DCC921B9AAE8A00D1ED54 /* MapKit.framework */; };
+		205DCC951B9AAF5500D1ED54 /* CommonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205DCC941B9AAF5500D1ED54 /* CommonUtil.swift */; };
+		205DCC971B9AAF5A00D1ED54 /* WeatherBaseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205DCC961B9AAF5A00D1ED54 /* WeatherBaseInfo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		205DCC691B9AAD5400D1ED54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 205DCC4C1B9AAD5400D1ED54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 205DCC531B9AAD5400D1ED54;
+			remoteInfo = StoneWeather;
+		};
+		205DCC741B9AAD5400D1ED54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 205DCC4C1B9AAD5400D1ED54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 205DCC531B9AAD5400D1ED54;
+			remoteInfo = StoneWeather;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		204F15221B9AB54100BBDFEA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		204F15241B9ABB8D00BBDFEA /* LocationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationInfo.swift; sourceTree = "<group>"; };
+		204F15271B9AC8F000BBDFEA /* PrivinceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivinceViewController.swift; sourceTree = "<group>"; };
+		204F15291B9AD1A700BBDFEA /* CitysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitysViewController.swift; sourceTree = "<group>"; };
+		204F152D1B9AFF6800BBDFEA /* citys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = citys.json; sourceTree = SOURCE_ROOT; };
+		204F152F1B9B01C600BBDFEA /* QuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuViewController.swift; sourceTree = "<group>"; };
+		205DCC541B9AAD5400D1ED54 /* StoneWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoneWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		205DCC571B9AAD5400D1ED54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		205DCC5C1B9AAD5400D1ED54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		205DCC5E1B9AAD5400D1ED54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		205DCC611B9AAD5400D1ED54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		205DCC631B9AAD5400D1ED54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		205DCC681B9AAD5400D1ED54 /* StoneWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoneWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		205DCC6C1B9AAD5400D1ED54 /* StoneWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoneWeatherTests.swift; sourceTree = "<group>"; };
+		205DCC6E1B9AAD5400D1ED54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		205DCC731B9AAD5400D1ED54 /* StoneWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoneWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		205DCC771B9AAD5400D1ED54 /* StoneWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoneWeatherUITests.swift; sourceTree = "<group>"; };
+		205DCC791B9AAD5400D1ED54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		205DCC8F1B9AAE5A00D1ED54 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		205DCC921B9AAE8A00D1ED54 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		205DCC941B9AAF5500D1ED54 /* CommonUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommonUtil.swift; path = Tools/CommonUtil.swift; sourceTree = "<group>"; };
+		205DCC961B9AAF5A00D1ED54 /* WeatherBaseInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherBaseInfo.swift; path = Entity/WeatherBaseInfo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		205DCC511B9AAD5400D1ED54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				205DCC931B9AAE8A00D1ED54 /* MapKit.framework in Frameworks */,
+				205DCC901B9AAE5A00D1ED54 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		205DCC651B9AAD5400D1ED54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		205DCC701B9AAD5400D1ED54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		204F15261B9AC8C600BBDFEA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				204F15221B9AB54100BBDFEA /* MainViewController.swift */,
+				204F15271B9AC8F000BBDFEA /* PrivinceViewController.swift */,
+				204F15291B9AD1A700BBDFEA /* CitysViewController.swift */,
+				204F152F1B9B01C600BBDFEA /* QuViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		205DCC4B1B9AAD5400D1ED54 = {
+			isa = PBXGroup;
+			children = (
+				205DCC561B9AAD5400D1ED54 /* StoneWeather */,
+				205DCC6B1B9AAD5400D1ED54 /* StoneWeatherTests */,
+				205DCC761B9AAD5400D1ED54 /* StoneWeatherUITests */,
+				205DCC551B9AAD5400D1ED54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		205DCC551B9AAD5400D1ED54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				205DCC541B9AAD5400D1ED54 /* StoneWeather.app */,
+				205DCC681B9AAD5400D1ED54 /* StoneWeatherTests.xctest */,
+				205DCC731B9AAD5400D1ED54 /* StoneWeatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		205DCC561B9AAD5400D1ED54 /* StoneWeather */ = {
+			isa = PBXGroup;
+			children = (
+				204F15261B9AC8C600BBDFEA /* Controller */,
+				205DCC991B9AAFEF00D1ED54 /* Tools */,
+				205DCC981B9AAFDE00D1ED54 /* Entity */,
+				205DCC911B9AAE6D00D1ED54 /* FrameWork */,
+				205DCC571B9AAD5400D1ED54 /* AppDelegate.swift */,
+				205DCC5B1B9AAD5400D1ED54 /* Main.storyboard */,
+				205DCC5E1B9AAD5400D1ED54 /* Assets.xcassets */,
+				205DCC601B9AAD5400D1ED54 /* LaunchScreen.storyboard */,
+				204F152D1B9AFF6800BBDFEA /* citys.json */,
+				205DCC631B9AAD5400D1ED54 /* Info.plist */,
+			);
+			path = StoneWeather;
+			sourceTree = "<group>";
+		};
+		205DCC6B1B9AAD5400D1ED54 /* StoneWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				205DCC6C1B9AAD5400D1ED54 /* StoneWeatherTests.swift */,
+				205DCC6E1B9AAD5400D1ED54 /* Info.plist */,
+			);
+			path = StoneWeatherTests;
+			sourceTree = "<group>";
+		};
+		205DCC761B9AAD5400D1ED54 /* StoneWeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				205DCC771B9AAD5400D1ED54 /* StoneWeatherUITests.swift */,
+				205DCC791B9AAD5400D1ED54 /* Info.plist */,
+			);
+			path = StoneWeatherUITests;
+			sourceTree = "<group>";
+		};
+		205DCC911B9AAE6D00D1ED54 /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				205DCC921B9AAE8A00D1ED54 /* MapKit.framework */,
+				205DCC8F1B9AAE5A00D1ED54 /* CoreLocation.framework */,
+			);
+			name = FrameWork;
+			sourceTree = "<group>";
+		};
+		205DCC981B9AAFDE00D1ED54 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				205DCC961B9AAF5A00D1ED54 /* WeatherBaseInfo.swift */,
+				204F15241B9ABB8D00BBDFEA /* LocationInfo.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		205DCC991B9AAFEF00D1ED54 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				205DCC941B9AAF5500D1ED54 /* CommonUtil.swift */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		205DCC531B9AAD5400D1ED54 /* StoneWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 205DCC7C1B9AAD5400D1ED54 /* Build configuration list for PBXNativeTarget "StoneWeather" */;
+			buildPhases = (
+				205DCC501B9AAD5400D1ED54 /* Sources */,
+				205DCC511B9AAD5400D1ED54 /* Frameworks */,
+				205DCC521B9AAD5400D1ED54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StoneWeather;
+			productName = StoneWeather;
+			productReference = 205DCC541B9AAD5400D1ED54 /* StoneWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		205DCC671B9AAD5400D1ED54 /* StoneWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 205DCC7F1B9AAD5400D1ED54 /* Build configuration list for PBXNativeTarget "StoneWeatherTests" */;
+			buildPhases = (
+				205DCC641B9AAD5400D1ED54 /* Sources */,
+				205DCC651B9AAD5400D1ED54 /* Frameworks */,
+				205DCC661B9AAD5400D1ED54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				205DCC6A1B9AAD5400D1ED54 /* PBXTargetDependency */,
+			);
+			name = StoneWeatherTests;
+			productName = StoneWeatherTests;
+			productReference = 205DCC681B9AAD5400D1ED54 /* StoneWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		205DCC721B9AAD5400D1ED54 /* StoneWeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 205DCC821B9AAD5400D1ED54 /* Build configuration list for PBXNativeTarget "StoneWeatherUITests" */;
+			buildPhases = (
+				205DCC6F1B9AAD5400D1ED54 /* Sources */,
+				205DCC701B9AAD5400D1ED54 /* Frameworks */,
+				205DCC711B9AAD5400D1ED54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				205DCC751B9AAD5400D1ED54 /* PBXTargetDependency */,
+			);
+			name = StoneWeatherUITests;
+			productName = StoneWeatherUITests;
+			productReference = 205DCC731B9AAD5400D1ED54 /* StoneWeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		205DCC4C1B9AAD5400D1ED54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = duzhe;
+				TargetAttributes = {
+					205DCC531B9AAD5400D1ED54 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = ZNRTL68XQ3;
+					};
+					205DCC671B9AAD5400D1ED54 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 205DCC531B9AAD5400D1ED54;
+					};
+					205DCC721B9AAD5400D1ED54 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 205DCC531B9AAD5400D1ED54;
+					};
+				};
+			};
+			buildConfigurationList = 205DCC4F1B9AAD5400D1ED54 /* Build configuration list for PBXProject "StoneWeather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 205DCC4B1B9AAD5400D1ED54;
+			productRefGroup = 205DCC551B9AAD5400D1ED54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				205DCC531B9AAD5400D1ED54 /* StoneWeather */,
+				205DCC671B9AAD5400D1ED54 /* StoneWeatherTests */,
+				205DCC721B9AAD5400D1ED54 /* StoneWeatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		205DCC521B9AAD5400D1ED54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				205DCC621B9AAD5400D1ED54 /* LaunchScreen.storyboard in Resources */,
+				205DCC5F1B9AAD5400D1ED54 /* Assets.xcassets in Resources */,
+				204F152E1B9AFF6800BBDFEA /* citys.json in Resources */,
+				205DCC5D1B9AAD5400D1ED54 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		205DCC661B9AAD5400D1ED54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		205DCC711B9AAD5400D1ED54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		205DCC501B9AAD5400D1ED54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204F15251B9ABB8D00BBDFEA /* LocationInfo.swift in Sources */,
+				205DCC581B9AAD5400D1ED54 /* AppDelegate.swift in Sources */,
+				204F15281B9AC8F000BBDFEA /* PrivinceViewController.swift in Sources */,
+				204F152A1B9AD1A700BBDFEA /* CitysViewController.swift in Sources */,
+				205DCC951B9AAF5500D1ED54 /* CommonUtil.swift in Sources */,
+				205DCC971B9AAF5A00D1ED54 /* WeatherBaseInfo.swift in Sources */,
+				204F15301B9B01C600BBDFEA /* QuViewController.swift in Sources */,
+				204F15231B9AB54100BBDFEA /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		205DCC641B9AAD5400D1ED54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				205DCC6D1B9AAD5400D1ED54 /* StoneWeatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		205DCC6F1B9AAD5400D1ED54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				205DCC781B9AAD5400D1ED54 /* StoneWeatherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		205DCC6A1B9AAD5400D1ED54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 205DCC531B9AAD5400D1ED54 /* StoneWeather */;
+			targetProxy = 205DCC691B9AAD5400D1ED54 /* PBXContainerItemProxy */;
+		};
+		205DCC751B9AAD5400D1ED54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 205DCC531B9AAD5400D1ED54 /* StoneWeather */;
+			targetProxy = 205DCC741B9AAD5400D1ED54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		205DCC5B1B9AAD5400D1ED54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				205DCC5C1B9AAD5400D1ED54 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		205DCC601B9AAD5400D1ED54 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				205DCC611B9AAD5400D1ED54 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		205DCC7A1B9AAD5400D1ED54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		205DCC7B1B9AAD5400D1ED54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		205DCC7D1B9AAD5400D1ED54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = StoneWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dz.org.StoneWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		205DCC7E1B9AAD5400D1ED54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = StoneWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dz.org.StoneWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		205DCC801B9AAD5400D1ED54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StoneWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dz.org.StoneWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StoneWeather.app/StoneWeather";
+			};
+			name = Debug;
+		};
+		205DCC811B9AAD5400D1ED54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StoneWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dz.org.StoneWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StoneWeather.app/StoneWeather";
+			};
+			name = Release;
+		};
+		205DCC831B9AAD5400D1ED54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StoneWeatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dz.org.StoneWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StoneWeather;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		205DCC841B9AAD5400D1ED54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StoneWeatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dz.org.StoneWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StoneWeather;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		205DCC4F1B9AAD5400D1ED54 /* Build configuration list for PBXProject "StoneWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				205DCC7A1B9AAD5400D1ED54 /* Debug */,
+				205DCC7B1B9AAD5400D1ED54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		205DCC7C1B9AAD5400D1ED54 /* Build configuration list for PBXNativeTarget "StoneWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				205DCC7D1B9AAD5400D1ED54 /* Debug */,
+				205DCC7E1B9AAD5400D1ED54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		205DCC7F1B9AAD5400D1ED54 /* Build configuration list for PBXNativeTarget "StoneWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				205DCC801B9AAD5400D1ED54 /* Debug */,
+				205DCC811B9AAD5400D1ED54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		205DCC821B9AAD5400D1ED54 /* Build configuration list for PBXNativeTarget "StoneWeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				205DCC831B9AAD5400D1ED54 /* Debug */,
+				205DCC841B9AAD5400D1ED54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 205DCC4C1B9AAD5400D1ED54 /* Project object */;
+}

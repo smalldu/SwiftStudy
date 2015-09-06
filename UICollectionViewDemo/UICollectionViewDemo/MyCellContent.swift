@@ -13,5 +13,4 @@ class MyCellContent: UICollectionViewCell {
     
     @IBOutlet  var contentLabel: UILabel!
     
-    
 }

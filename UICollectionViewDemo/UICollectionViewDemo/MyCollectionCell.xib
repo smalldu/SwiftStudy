@@ -10,14 +10,14 @@
             <rect key="frame" x="0.0" y="0.0" width="60" height="75"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f1" translatesAutoresizingMaskIntoConstraints="NO" id="dVo-mq-JhV">
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dVo-mq-JhV">
                     <rect key="frame" x="5" y="5" width="50" height="50"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="IKW-7a-LjJ"/>
                         <constraint firstAttribute="height" constant="50" id="kOh-ei-F0E"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wai" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khm-Zm-H2N">
+                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khm-Zm-H2N">
                     <rect key="frame" x="0.0" y="63" width="60" height="12"/>
                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -41,7 +41,4 @@
             <point key="canvasLocation" x="355" y="99.5"/>
         </view>
     </objects>
-    <resources>
-        <image name="f1" width="200" height="200"/>
-    </resources>
 </document>

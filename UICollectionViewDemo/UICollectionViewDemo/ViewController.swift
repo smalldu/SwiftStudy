@@ -35,15 +35,12 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         collect.backgroundColor = UIColor.whiteColor()
         collect.delegate = self
         collect.dataSource = self
-
         collect.contentInset = UIEdgeInsets(top: 60, left: 0, bottom: 0, right: 0)
         
 //      collect.registerClass(MyCellContent.self, forCellWithReuseIdentifier: "DesignViewCell")
         
         let nib = UINib(nibName: "MyCollectionCell", bundle: NSBundle.mainBundle())
-        
         collect.registerNib(nib, forCellWithReuseIdentifier: "DesignViewCell")
-
         for i in 1...9{
             dic.append(CellContent(img: "f"+String(i), name: "歪脖子"+String(i)))
         }
@@ -72,9 +69,6 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
 
         let identify:String = "DesignViewCell"
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(identify, forIndexPath: indexPath) as! MyCellContent
-//        cell.backgroundView
-//        cell.selectedBackgroundView?.backgroundColor = UIColor.grayColor()
-//        cell.selected = true
         cell.contentView.backgroundColor = UIColor.grayColor()
         cell.contentView.alpha = 0.2
         let img = UIImage(named: (self.dic[indexPath.row] as CellContent).img)

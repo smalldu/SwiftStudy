@@ -86,12 +86,13 @@ class UserDefineViewController: UIViewController,UICollectionViewDataSource,UICo
             if let  indexPath = self.collect.indexPathForItemAtPoint(tapPoint)
             {
                 //点击了cell
+                //这个方法可以用来对collectionView中的元素进行批量的插入，删除，移动等操作，同时将触发collectionView所对应的layout的对应的动画。
                 print("------")
                 self.collect.performBatchUpdates({ () -> Void in
                     self.collect.deleteItemsAtIndexPaths([indexPath])
                     self.dic.removeAtIndex(indexPath.row)
                 }, completion: nil)
-                //这个方法可以用来对collectionView中的元素进行批量的插入，删除，移动等操作，同时将触发collectionView所对应的layout的对应的动画。
+                
             }else{
                 
                
@@ -99,7 +100,6 @@ class UserDefineViewController: UIViewController,UICollectionViewDataSource,UICo
                 self.dic.append(CellContent(img: "f"+String(val), name: "歪脖子"+String(val)))
 
                 self.collect.insertItemsAtIndexPaths([NSIndexPath(forItem: Int(val) , inSection: 0)])
-//                
 //                dispatch_async(dispatch_get_global_queue(0, 0), { () -> Void in
 //                     let val =  arc4random_uniform(9)
 //                    self.dic.append(CellContent(img: "f"+String(val), name: "歪脖子"+String(val)))
@@ -112,7 +112,6 @@ class UserDefineViewController: UIViewController,UICollectionViewDataSource,UICo
                 print("+++++++")
                 
             }
-            
         }
     }
     

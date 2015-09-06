@@ -71,7 +71,7 @@ class MyCollectionViewLayout: UICollectionViewLayout {
             // Configure attributes ...
             attributes!.alpha = 0.0;
             attributes!.center =  CGPointMake(_center!.x, _center!.y);
-            attributes?.size = CGSizeMake(1000, 1000)
+            //attributes?.size = CGSizeMake(1000, 1000)
         }
         
         return attributes;
@@ -84,20 +84,11 @@ class MyCollectionViewLayout: UICollectionViewLayout {
             if update.updateAction == UICollectionUpdateAction.Insert{
                 self.insertIndexPaths.append(update.indexPathAfterUpdate)
             }
-        }
-//        
-//        for (UICollectionViewUpdateItem *update in updateItems)
-//        {
-//            if (update.updateAction == UICollectionUpdateActionDelete)
-//            {
-//                [self.deleteIndexPaths addObject:update.indexPathBeforeUpdate];
-//            }
-//            else if (update.updateAction == UICollectionUpdateActionInsert)
-//            {
-//                [self.insertIndexPaths addObject:update.indexPathAfterUpdate];
-//            }
-//        }
-        
     }
+        
+        
+}
+    
+
     
 }
