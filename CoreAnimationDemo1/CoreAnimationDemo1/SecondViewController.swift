@@ -9,7 +9,8 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    let k=1056/10
+    @IBOutlet var digitViews: [UIView]! //数组
     @IBOutlet weak var v1: UIView!
     let ly1 = CALayer()
     let ly2 = CALayer()
@@ -17,6 +18,7 @@ class SecondViewController: UIViewController {
     let ly4 = CALayer()
     let ly5 = CALayer()
     let ly6 = CALayer()
+    var img:UIImage?
     @IBOutlet weak var v2: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,8 +77,41 @@ class SecondViewController: UIViewController {
         ly6.mask = ly5
         v2.layer.addSublayer(ly6)
         
+        img = UIImage(named: "sz")!
+        for item in digitViews{
+            item.layer.contents = UIImage(named: "sz")!.CGImage
+            item.layer.contentsRect = CGRectMake(0, 0, 0.1, 1.0);
+            item.layer.contentsGravity = kCAGravityResizeAspect;
+        }
         
         
+       let timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "showTime", userInfo: nil, repeats: true)
+        timer.fire()
+    }
+    
+    func showTime(){
+        
+        let calendar = NSCalendar.currentCalendar()
+//        let unitFlags =
+        let comp = calendar.components(NSCalendarUnit.Second , fromDate: NSDate())
+
+        setDigit(comp.second%10,ly: digitViews[0])
+        setDigit(comp.second/10, ly: digitViews[1])
+        
+        let comp1 = calendar.components(NSCalendarUnit.Minute , fromDate: NSDate())
+        setDigit(comp1.minute%10,ly: digitViews[2])
+        setDigit(comp1.minute/10, ly: digitViews[3])
+        
+        let comp2 = calendar.components(NSCalendarUnit.Hour , fromDate: NSDate())
+        setDigit(comp2.hour%10,ly: digitViews[4])
+        setDigit(comp2.hour/10, ly: digitViews[5])
+    }
+    
+    func setDigit(t:Int,ly:UIView){
+       
+        ly.layer.contentsRect = CGRectMake(0.1*CGFloat(t),0,0.1, 1);
+       // ly.layer.contentsGravity = kCAGravityResizeAspectFill;
+        //ly.frame = CGRectMake(5, 100, 10, <#T##height: CGFloat##CGFloat#>)
     }
     
     override func didReceiveMemoryWarning() {

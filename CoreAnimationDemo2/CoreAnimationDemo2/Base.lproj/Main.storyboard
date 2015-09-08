@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreAnimationDemo2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q6c-sL-rQF">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="217" id="7q4-su-S7d"/>
+                                    <constraint firstAttribute="width" constant="337" id="a70-8G-zdh"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7q4-su-S7d"/>
+                                        <exclude reference="a70-8G-zdh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="7q4-su-S7d"/>
+                                        <include reference="a70-8G-zdh"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFK-ia-ZR0">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="CaG-Ni-5Nl"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CaG-Ni-5Nl"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="CaG-Ni-5Nl"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Q6c-sL-rQF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="0ak-Cm-J2H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eFK-ia-ZR0" secondAttribute="trailing" constant="11.5" id="Ijo-DX-1RU"/>
+                            <constraint firstItem="Q6c-sL-rQF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PXh-QZ-sYA"/>
+                            <constraint firstItem="eFK-ia-ZR0" firstAttribute="top" secondItem="Q6c-sL-rQF" secondAttribute="bottom" constant="20" id="f3w-VF-UJs"/>
+                            <constraint firstItem="eFK-ia-ZR0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="yGf-kc-j3V"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Q6c-sL-rQF"/>
+                                <exclude reference="eFK-ia-ZR0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0ak-Cm-J2H"/>
+                                <exclude reference="PXh-QZ-sYA"/>
+                                <exclude reference="Ijo-DX-1RU"/>
+                                <exclude reference="f3w-VF-UJs"/>
+                                <exclude reference="yGf-kc-j3V"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Q6c-sL-rQF"/>
+                                <include reference="eFK-ia-ZR0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0ak-Cm-J2H"/>
+                                <include reference="PXh-QZ-sYA"/>
+                                <include reference="Ijo-DX-1RU"/>
+                                <include reference="f3w-VF-UJs"/>
+                                <include reference="yGf-kc-j3V"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="Q6c-sL-rQF" id="KZg-gd-mci"/>
+                        <outlet property="txtView" destination="eFK-ia-ZR0" id="Uax-XO-Yjs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="297" y="352.5"/>
+        </scene>
+    </scenes>
+</document>
