@@ -110,8 +110,6 @@ class SecondViewController: UIViewController {
     func setDigit(t:Int,ly:UIView){
        
         ly.layer.contentsRect = CGRectMake(0.1*CGFloat(t),0,0.1, 1);
-       // ly.layer.contentsGravity = kCAGravityResizeAspectFill;
-        //ly.frame = CGRectMake(5, 100, 10, <#T##height: CGFloat##CGFloat#>)
     }
     
     override func didReceiveMemoryWarning() {
